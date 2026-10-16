@@ -4,24 +4,44 @@ Qualcomm UEFI drivers and related files
 
 ## About
 
-This repository contains UEFI DXE drivers applications and configuration files for Qualcomm platforms
+This repository contains UEFI DXE drivers applications and configuration
+files for Qualcomm platforms
 It is for firmware development research and reverse engineering
 
-## Contents
+## Structure
 
-* AdcDxe.efi ADC driver
-* ChargerExDxe.efi Charger driver
-* PmicDxe.efi PMIC driver
-* QcomBds.efi Qualcomm BDS driver
-* QcomChargerApp.efi Charger UEFI application
-* QcomChargerDxeLA.efi Charger DXE driver
-* SPMI.efi SPMI bus driver
-* TsensDxe.efi Temperature sensor driver
-* ULogDxe.efi UEFI logging driver
-* UsbPwrCtrlDxe.efi USB power control driver
-* BDS_Menu.cfg uefiplat.cfg QcomChargerCfg.cfg Configuration files
-* xbl.img.dump.7z XBL image dump
-* Some drivers include c source and asm disassembly files
+    Drivers/    UEFI DXE drivers and applications
+    Config/     platform configuration and provisioning files
+    Dumps/      captured firmware and bootloader archives
+
+## Drivers
+
+* AdcDxe ADC driver
+* ChargerExDxe Charger driver
+* PmicDxe PMIC driver
+* QcomBds Qualcomm BDS driver
+* QcomChargerApp Charger UEFI application
+* QcomChargerDxeLA Charger DXE driver
+* SPMI SPMI bus driver
+* TsensDxe Temperature sensor driver
+* ULogDxe UEFI logging driver
+* UsbPwrCtrlDxe USB power control driver
+
+Some drivers come with C source and ASM disassembly next to the EFI binary
+
+## Config
+
+* BDS_Menu.cfg BDS menu layout
+* QcomChargerCfg.cfg charger configuration
+* uefiplat.cfg platform configuration
+* BATTERY.PROVISION battery provisioning data
+
+## Dumps
+
+* audio.7z audio subsystem firmware dump
+* xbl.img.dump.7z XBL bootloader image dump
+
+Extract archives locally before use, extraction folder is in gitignore
 
 ## Usage
 
